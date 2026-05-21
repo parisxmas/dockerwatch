@@ -43,6 +43,26 @@ Inside the detail popup:
 
 ## Install
 
+### Download a prebuilt binary (Linux)
+
+Static musl binaries are attached to each
+[GitHub release](https://github.com/parisxmas/dockerwatch/releases/latest) — no
+runtime dependencies.
+
+```sh
+# x86_64
+curl -L -o /usr/local/bin/dockerwatch \
+  https://github.com/parisxmas/dockerwatch/releases/latest/download/dockerwatch-x86_64-linux-musl
+chmod +x /usr/local/bin/dockerwatch
+
+# or aarch64 (ARM)
+curl -L -o /usr/local/bin/dockerwatch \
+  https://github.com/parisxmas/dockerwatch/releases/latest/download/dockerwatch-aarch64-linux-musl
+chmod +x /usr/local/bin/dockerwatch
+```
+
+`SHA256SUMS` is published alongside each release if you want to verify.
+
 ### From source (native)
 
 ```sh
